@@ -1,4 +1,5 @@
-# SDA-Capstone
+# Cybersecurity Machine Learning Capstone
+
 The capstone is assign bt [SDA](https://sda.edu.sa) (Saudi Digital Acadimy) in the [Data Governance Program](https://github.com/mhkhoraidah/SDA-Python-Dash-Project/files/7786003/Data.Governance.Program.Calendar.pdf) (Data Science Bootcamp) partner with [Coding Dojo](https://www.codingdojo.com).
 
 # Coders Arm Team:
@@ -64,3 +65,11 @@ The project uses machine learning technology to see the criteria that cause the 
    - Use get_dummies to convert values with the same proiority to cloumns and set 0 or 1
    - Map the values which has some proiority levels to integer values accourding to their level
    - Export CSV file [enumerated data.csv](https://github.com/mhkhoraidah/SDA-Capstone/blob/master/enumerated%20dataset.csv)
+
+# Machine Learning Models
+
+  - Supervised
+  - Unsupervised
+
+
+
