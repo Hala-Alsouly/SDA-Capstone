@@ -61,4 +61,6 @@ The project uses machine learning technology to see the criteria that cause the 
      - If selection is showing in the string so will set 1 under the column name `Desktop`, `Laptop`, `Smartphone`
  - [Preprocessing (convert all strings to numbers)](https://github.com/mhkhoraidah/SDA-Capstone/blob/master/Preprocessing%20(convert%20to%20numbers).ipynb)
    - Required import `multiSelectSplitColumn(column, removeCols = [], selections = [])`
+   - Use get_dummies to convert values with the same proiority to cloumns and set 0 or 1
+   - Map the values which has some proiority levels to integer values accourding to their level
    - Export CSV file [enumerated data.csv](https://github.com/mhkhoraidah/SDA-Capstone/blob/master/enumerated%20dataset.csv)
