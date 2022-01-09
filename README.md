@@ -68,8 +68,14 @@ The project uses machine learning technology to see the criteria that cause the 
 
 # Machine Learning Models
 
-  - Supervised
-  - Unsupervised
+  - [Supervised](https://github.com/mhkhoraidah/SDA-Capstone/blob/master/Supervised%20ML.ipynb)
+    - Logistic Regression
+    - Decision Tree Classifier
+    - Random Forest
+  - [Unsupervised](https://github.com/mhkhoraidah/SDA-Capstone/blob/master/Unsupervised%20ML.ipynb)
+    - PCA
+    - KMeans
+    - Elbow Graph
 
 
 
