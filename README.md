@@ -70,12 +70,43 @@ The project uses machine learning technology to see the criteria that cause the 
 
   - [Supervised](https://github.com/mhkhoraidah/SDA-Capstone/blob/master/Supervised%20ML.ipynb)
     - Logistic Regression
+    
+        ```
+        Training Accuracy: 0.9639175257731959
+        Testing Accuracy:  0.9588477366255144 
+        Precision:         0.830508 
+        Recall:            1.000000
+        ```
     - Decision Tree Classifier
+    
+        ```
+        Training Accuracy: 0.9670103092783505
+        Testing Accuracy:  0.9588477366255144
+        Precision:         0.830508
+        Recall:            1.000000
+        ```
+        
     - Random Forest
+        
+        ```
+        Training Accuracy: 0.9938144329896907
+        Testing Accuracy:  0.9053497942386831
+        Precision:         0.837209
+        Recall:            0.692308
+        ```    
+        
   - [Unsupervised](https://github.com/mhkhoraidah/SDA-Capstone/blob/master/Unsupervised%20ML.ipynb)
     - PCA
+    
+        ```    
+        Training Accuracy: 0.9237113402061856
+        Testing Accuracy:  0.9053497942386831
+        ```   
+        
     - KMeans
+
     - Elbow Graph
+  
 
 
 
