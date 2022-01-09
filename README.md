@@ -1,6 +1,7 @@
 # SDA-Capstone
+The capstone is assign bt [SDA](https://sda.edu.sa) (Saudi Digital Acadimy) in the [Data Governance Program](https://github.com/mhkhoraidah/SDA-Python-Dash-Project/files/7786003/Data.Governance.Program.Calendar.pdf) (Data Science Bootcamp) partner with [Coding Dojo](https://www.codingdojo.com).
 
-Coders Arm Team:
+# Coders Arm Team:
 - Mustafa Khoraidah
   https://github.com/mhkhoraidah
   
@@ -20,6 +21,10 @@ Coders Arm Team:
 # Abstract
 
 The idea of the project is to collect data by making a survey to measure the level of cybersecurity awareness of cyber- crime in Saudi Arabia.  The survey recruited 1230 Saudi nationals with different backgrounds and relies on knowledge and attitude aspects. The collected data were gathered between August and October of 2019. The survey contains several questions, which are listed below.  Personal and skills information, Cybersecurity Activities which aims to assess current Information technology knowledge, Cybercrime Consciousness to measure what subjects believe and their opinion, Case Reports, which aimed to evaluate subjects and reactions when they faced a cybercrime incident. The purpose of the project is to study, analyze, building models and explore data to obtain the information needed to educate people about cybercrime and to inform the relevant authorities.
+
+# Dataset source: 
+
+https://data.mendeley.com/datasets/fbs9mgmh4y/3
 
 
 # Background of the study
@@ -45,5 +50,17 @@ Talking about how to raise societal awareness of obtaining safety and security i
 The project uses machine learning technology to see the criteria that cause the victim of a cybercrime through the practices used by the user on the Internet and computer use. The technology used for the project is supervised learning and unsupervised concept to predict the outcomes of being a victim of cybercrime or not.  
 
 
-# Dataset source: 
-https://data.mendeley.com/datasets/fbs9mgmh4y/3
+# Data Cleaning and Preproccessing Structure
+
+### Jupyter Notebool Files Structure:
+ - [Data Cleaning and EDA](https://github.com/mhkhoraidah/SDA-Capstone/blob/master/Data%20cleaning%20and%20EDA.ipynb)
+   - Export CSV file [Cleaned data.csv](https://github.com/mhkhoraidah/SDA-Capstone/blob/master/Cleaned%20data.csv)
+ - [Create a Function to Spit Multi-select String](https://github.com/mhkhoraidah/SDA-Capstone/blob/master/spit%20multi-select%20function.ipynb)
+   - Ex. 'Desktop, Laptop, Smartphone' 
+     - Genarate a dataframe with selection columns and set 0 or 1
+     - If selection is showing in the string so will set 1 under the column name `Desktop`, `Laptop`, `Smartphone`
+ - [Preprocessing (convert all strings to numbers)](https://github.com/mhkhoraidah/SDA-Capstone/blob/master/Preprocessing%20(convert%20to%20numbers).ipynb)
+   - Required import `multiSelectSplitColumn(column, removeCols = [], selections = [])`
+   - Use get_dummies to convert values with the same proiority to cloumns and set 0 or 1
+   - Map the values which has some proiority levels to integer values accourding to their level
+   - Export CSV file [enumerated data.csv](https://github.com/mhkhoraidah/SDA-Capstone/blob/master/enumerated%20dataset.csv)
