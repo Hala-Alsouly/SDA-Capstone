@@ -27,8 +27,9 @@ Create a machine learning technology to know who most targeted for cyber-crime. 
 
 The dataset is a survey contains around 66 questions. Some of the questions are personal and others questions related technologies and tools/software that the person used. On the other hand, collecting some cybersecurity activities which aims to assess current information technology knowledge, cyber-crime consciousness to measure what subjects believe and their opinion, case reports, which aimed to evaluate subjects and reactions when they faced a cyber-crime incident. Therefore, there are several points in the data that indicate a lack of awareness of cyber-crime, which needs to be improved and developed.
 
-**Source:** https://data.mendeley.com/datasets/fbs9mgmh4y/3
-**Note:** The survey were between August and October 2019
+ - **Source:** https://data.mendeley.com/datasets/fbs9mgmh4y/3
+
+ - **Note:** The survey were between August and October 2019
 
 
 ## Data Cleaning and Preproccessing Structure
