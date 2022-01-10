@@ -105,7 +105,7 @@ The project uses machine learning technology to see the criteria that cause the 
         
     - KMeans
 
-    - Elbow Graph
+    - SVM
   
 
 
