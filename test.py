@@ -65,21 +65,22 @@ for i in range (0, len(toplist)):
         # getting the prediction
     y_pred=logreg.predict(x_test)
     t=logreg.score(x_train, y_train)
-    print("Training Accuracy:", t)
+
     test= metrics.accuracy_score(y_test, y_pred)
-    print("Testing Accuracy:", test)
+
     # precision tp / (tp + fp)
     precision = metrics.precision_score(y_test, y_pred)
-    print('Precision: %f' % precision)
+
     # recall: tp / (tp + fn)
     recall = metrics.recall_score(y_test, y_pred)
-    print('Recall: %f' % recall)
+
     logistic_regression.append({'training':t,
                                 'testing': test,
                                 'precision':precision,
                                 'recall': recall  })
     scores = cross_val_score(logreg, x_train, y_train, cv=5)
     logCrossVal.append(scores)
+    print("%0.2f accuracy with a standard deviation of %0.2f" % (scores.mean(), scores.std()))
     
     ######## Decision Tree
     
@@ -87,15 +88,15 @@ for i in range (0, len(toplist)):
     # Predicting the y values corresponding to X_test_sm
     clf_pred = clf.predict(x_test)
     t=clf.score(x_train, y_train)
-    print("Training Accuracy:", t)
+
     test= metrics.accuracy_score(y_test, clf_pred)
-    print("Testing Accuracy:", test)
+
     # precision tp / (tp + fp)
     precision = metrics.precision_score(y_test, clf_pred)
-    print('Precision: %f' % precision)
+
     # recall: tp / (tp + fn)
     recall = metrics.recall_score(y_test, clf_pred)
-    print('Recall: %f' % recall)
+
     Decision_Tree.append({'training':t,
                                 'testing': test,
                                 'precision':precision,
@@ -108,15 +109,15 @@ for i in range (0, len(toplist)):
     class_forest = RandomForestClassifier(n_estimators = 5, criterion = 'entropy', random_state = 0).fit(x_train, y_train)
     preds_class = class_forest.predict(x_test)
     t= class_forest.score(x_train, y_train)
-    print("Training Accuracy:", t)
+
     test=metrics.accuracy_score(y_test, preds_class)
-    print("Testing Accuracy:", test)
+
     # precision tp / (tp + fp)
     precision = metrics.precision_score(y_test, preds_class)
-    print('Precision: %f' % precision)
+
     # recall: tp / (tp + fn)
     recall = metrics.recall_score(y_test, preds_class)
-    print('Recall: %f' % recall)
+
     Random_forest.append({'training':t,
                                 'testing': test,
                                 'precision':precision,
@@ -132,15 +133,15 @@ for i in range (0, len(toplist)):
     preds_class = class_sv.predict(x_test)
     
     t=class_sv.score(x_train, y_train)
-    print("Training Accuracy:", t)
+
     test=metrics.accuracy_score(y_test, preds_class)
-    print("Testing Accuracy:", test)
+
     # precision tp / (tp + fp)
     precision = metrics.precision_score(y_test, preds_class)
-    print('Precision: %f' % precision)
+
     # recall: tp / (tp + fn)
     recall = metrics.recall_score(y_test, preds_class)
-    print('Recall: %f' % recall)
+
     
     svc.append({'training':t,
                                 'testing': test,
@@ -150,16 +151,23 @@ for i in range (0, len(toplist)):
     svc_crossVal.append(scores)
     print("%0.2f accuracy with a standard deviation of %0.2f" % (scores.mean(), scores.std()))
     
-print(logistic_regression)
-print(Decision_Tree)
-print(Random_forest)
-print(svc)
+
 
 print('----Logistic Regression----')
-print(pd.DataFrame(logistic_regression))
+print(pd.DataFrame(logistic_regression,  index =[3, 5, 10, 15]))
 print('----Decision Tree Classifair----')
-print(pd.DataFrame(Decision_Tree))
+print(pd.DataFrame(Decision_Tree,  index =[3, 5, 10, 15]))
 print('----Random forest----')
-print(pd.DataFrame(Random_forest))
+print(pd.DataFrame(Random_forest,  index =[3, 5, 10, 15]))
 print('----Support Vector Classifair----')
-print(pd.DataFrame(svc))
+print(pd.DataFrame(svc,  index =[3, 5, 10, 15]))
+
+print('-------* Cross Values *-------')
+print('----Logistic Regression----')
+print(pd.DataFrame(logCrossVal,  index =[3, 5, 10, 15]))
+print('----Decision Tree Classifair----')
+print(pd.DataFrame(DecisionTree_CrossVal,  index =[3, 5, 10, 15]))
+print('----Random forest----')
+print(pd.DataFrame(RandomForest_crossVal,  index =[3, 5, 10, 15]))
+print('----Support Vector Classifair----')
+print(pd.DataFrame(svc_crossVal,  index =[3, 5, 10, 15]))
