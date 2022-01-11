@@ -59,6 +59,7 @@ The dataset is a survey contains around 66 questions. Some of the questions are 
  
   - [Unsupervised](https://github.com/mhkhoraidah/SDA-Capstone/blob/master/Unsupervised%20ML.ipynb)
     - KMeans
+    - PCA
     
   
 
