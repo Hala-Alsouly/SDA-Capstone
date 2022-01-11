@@ -152,7 +152,7 @@ for i in range (0, len(toplist)):
     print("%0.2f accuracy with a standard deviation of %0.2f" % (scores.mean(), scores.std()))
     
 
-
+print('\n -------* Accuracy *-------')
 print('----Logistic Regression----')
 print(pd.DataFrame(logistic_regression,  index =[3, 5, 10, 15]))
 print('----Decision Tree Classifair----')
@@ -162,7 +162,7 @@ print(pd.DataFrame(Random_forest,  index =[3, 5, 10, 15]))
 print('----Support Vector Classifair----')
 print(pd.DataFrame(svc,  index =[3, 5, 10, 15]))
 
-print('-------* Cross Values *-------')
+print('\n -------* Cross Values *-------')
 print('----Logistic Regression----')
 print(pd.DataFrame(logCrossVal,  index =[3, 5, 10, 15]))
 print('----Decision Tree Classifair----')
