@@ -54,11 +54,12 @@ The dataset is a survey contains around 66 questions. Some of the questions are 
     - Logistic Regression
     - Decision Tree Classifier
     - Random Forest
+    - Support Vector Machine (SVM)
+    - Artificial Neural Network (ANN) 
  
   - [Unsupervised](https://github.com/mhkhoraidah/SDA-Capstone/blob/master/Unsupervised%20ML.ipynb)
-    - PCA
     - KMeans
-    - SVM
+    
   
 
 ## How to run the Project
