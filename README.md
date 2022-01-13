@@ -61,7 +61,8 @@ The dataset is a survey contains around 66 questions. Some of the questions are 
     - KMeans
     - PCA
     
-  
+## Power BI Dashboard
+<img src="https://github.com/mhkhoraidah/SDA-Capstone/blob/master/Power%20BI/Capstone%20Dashboard.PNG?raw=true" alt="Dashbaord">
 
 ## How to run the Project
 ```
